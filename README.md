@@ -19,3 +19,6 @@ Polish and english.
 Some functions are available only for admin on backend such as view all tasks by user, edit task for all users.
 
 On front user has access only for his tasks even if is admin. 
+
+## ScreenShots
+![alt text for screen readers](./ezgif.com-gif-maker.gif "Text to show on mouseover").
