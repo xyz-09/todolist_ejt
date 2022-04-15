@@ -18,7 +18,11 @@ class RestApiContoller
 
 
   /**
-   * Check permision for user to use rest
+   * Check permission for user to use rest on front
+   * 
+   * @param WP_REST_Request $request
+   * 
+   * @return Bool/WP_Error
    */
   public function check_data_permissions(\WP_REST_Request $request)
   {
@@ -33,11 +37,11 @@ class RestApiContoller
   }
 
   /**
-   * Validate fields
+   * Check permission for user to use rest on back
    * 
    * @param WP_REST_Request $request
    * 
-   * Check permision for admin
+   * @return Bool/WP_Error
    */
   public function  check_admin_permissions(\WP_REST_Request $request)
   {
@@ -174,7 +178,7 @@ class RestApiContoller
 
 
   /**
-   * Validate fields
+   * Return Success reponse
    * 
    * @param Array|Object $params
    * 
@@ -213,6 +217,8 @@ class RestApiContoller
 
   /**
    * Return error response on rest not authenticated
+   * 
+   * @return WP_Error
    */
   private function returnRestError()
   {

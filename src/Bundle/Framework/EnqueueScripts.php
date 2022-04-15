@@ -25,8 +25,8 @@ class EnqueueScripts implements RegisterInterface
     $this->plugin_name = $plugin_name;
     $this->version = $version;
     $this->path = $path;
-    $this->restEndPoint = '/wp-json/' . $this->plugin_name . '/v2';
 
+    $this->restEndPoint = '/wp-json/' . $this->plugin_name . '/v2';
     $this->adminURL = WP_PLUGIN_URL . '/' .  $this->plugin_name . '/assets/js';
 
     if (!is_user_logged_in()) return;

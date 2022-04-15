@@ -6,7 +6,7 @@ use TodoListApp\Bundle\RegisterInterface;
 use TodoListApp\Controller\RestApiContoller;
 
 /*
-Class to register wordpress Pages
+Class to register wordpress Admin pages
 */
 
 class AdminController implements RegisterInterface
@@ -71,7 +71,7 @@ class AdminController implements RegisterInterface
      *
      * @param string $template
      * 
-     * @return void
+     * @return
      */
     public function render_template()
     {
