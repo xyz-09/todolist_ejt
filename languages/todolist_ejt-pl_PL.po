@@ -1,0 +1,78 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2022-04-14 19:36+0200\n"
+"PO-Revision-Date: 2022-04-14 19:36+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: pl_PL\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.1\n"
+"X-Poedit-Basepath: konferencje/wp-content/plugins/todoList_ejt\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 "
+"|| n%100>14) ? 1 : 2);\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: assets/partials/get_list-todolist_ejt-admin-display.php:4
+#: src/Bundle/Framework/Admin/WordpressAdmin.php:34
+msgid "EJT Tasks List"
+msgstr "EJT Lista zadań"
+
+#: assets/partials/get_list-todolist_ejt-admin-display.php:7
+msgid ""
+"You may manage all tasks for specific user. Choose user you want to edit. "
+"<strong>Deafult user is You.</strong><br />\n"
+"All actions are immediately saved on the server."
+msgstr ""
+"Możesz edytować zadania dla określonego użytkownika. Wybierz użytkownika do "
+"edycji. <strong>Domyślnym użytkownikiem jesteś Ty</strong><br/>\n"
+"Wszystkie akcje są natychmiast zapisywane na serwer."
+
+#: assets/partials/get_list-todolist_ejt-admin-display.php:13
+msgid "Use [todoList] to display tasksTable on front."
+msgstr ""
+"Użyj skrótu [todoList] by wyświetlić listę zadań w motywie/poście/stronie."
+
+#: assets/partials/get_list-todolist_ejt-display.php:3
+#: assets/partials/get_list-todolist_ejt-display.php:5
+msgid "Choose user"
+msgstr "Wybierz uzytkownika"
+
+#: assets/partials/get_list-todolist_ejt-display.php:12
+msgid "Type your todo task"
+msgstr "Wpisz nowe zadanie"
+
+#: assets/partials/get_list-todolist_ejt-display.php:28
+msgid "Complete all tasks"
+msgstr "Zakończ wszystkie zadania"
+
+#: assets/partials/get_list-todolist_ejt-display.php:30
+msgid "Clear completed"
+msgstr "Kasuj ukończone"
+
+#: assets/partials/get_list-todolist_ejt-display.php:48
+msgid "left"
+msgstr "zostało"
+
+#: assets/partials/get_list-todolist_ejt-display.php:52
+msgid "All"
+msgstr "Wszystkie"
+
+#: assets/partials/get_list-todolist_ejt-display.php:53
+msgid "Uncomplete"
+msgstr "Nieukończone"
+
+#: assets/partials/get_list-todolist_ejt-display.php:54
+msgid "Completed"
+msgstr "Ukończone"
+
+#: src/Bundle/Framework/Shortcodes.php:39
+msgid "The list is available only for logged-in users."
+msgstr "Lista zadań dostępna jest tylko dla zalogowanych użytkowników."
+
+#: src/Controller/RestApiContoller.php:219
+msgid "REST API restricted to authenticated users."
+msgstr "Dostępn do REST API został ograniczony dla zalogowanych użytkowników."
