@@ -1,5 +1,5 @@
 # ignore vendor
-vendor/
+
 
 # ignore log files and databases
 *.log
