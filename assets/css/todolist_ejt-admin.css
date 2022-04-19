@@ -441,3 +441,24 @@ html .clear-completed:active {
         box-shadow: 0 -36px 0 -10px transparent, 32px -16px 0 -10px transparent, 32px 16px 0 -10px transparent, 0 36px 0 -10px transparent, -32px 16px 0 -10px transparent, -32px -16px 0 -10px transparent;
     }
 }
+
+.task{
+    opacity: 1;
+    transition: opacity .3s linear;
+    user-select: none;
+    -webkit-user-drag: element;
+}
+.dragging{
+  opacity:0.4;
+  color: transparent;
+  background: none;
+
+  cursor: grabbing;
+}
+.dropHere{
+    border: 2px dashed rgba(0, 0, 0, 0.2);
+    box-shadow: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}

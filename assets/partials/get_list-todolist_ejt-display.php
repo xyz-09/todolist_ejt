@@ -1,8 +1,7 @@
-
 <noscript>
     <style>
-        #todoapp{
-            display:none
+        #todoapp {
+            display: none
         }
     </style>
     <p class="error">JS must be Enabled</p>
@@ -55,10 +54,9 @@
                 <?php _e('Clear completed', 'todolist_ejt'); ?>
             </button>
         </div>
-
         <transition-group class="todo-list" name="todo" tag="ul">
 
-            <li v-for="(task,index) in filteredTasks" class="task" :key="index" :class="{ completed: task.completed, editing: task == editedTask }">
+            <li v-for="(task,index) in filteredTasks" class="task" :key="index" :class="{ completed: task.completed, editing: task == editedTask }" draggable="true" @dragstart="startDrag(index,$event)" @drop="onDrop(index,$event)" @dragover.prevent @dragenter="onDrag($event)" @dragleave="onDragLeave($event)">
                 <div class="view">
                     <input class="toggle" type="checkbox" v-model="task.completed" @change="toggleComplete(task, $event.target)">
 
