@@ -23,9 +23,9 @@ class AdminController implements RegisterInterface
     {
         add_action('admin_menu', [$this, 'add_menu_pages']);
 
-        remove_action('template_redirect', 'rest_output_link_header', 11);
-        remove_action('wp_head', 'rest_output_link_wp_head', 10);
-        remove_action('xmlrpc_rsd_apis', 'rest_output_rsd');
+      //  remove_action('template_redirect', 'rest_output_link_header', 11);
+      //  remove_action('wp_head', 'rest_output_link_wp_head', 10);
+      //  remove_action('xmlrpc_rsd_apis', 'rest_output_rsd');
     }
 
     public function register($plugin_name, $version, $path): void
@@ -77,7 +77,7 @@ class AdminController implements RegisterInterface
     {
         $view = current_filter();
         $current_view = $this->views[$view];
-        $template_path = $this->path . '/assets/partials/' . $current_view . '-todolist_ejt-admin-display.php';
+        $template_path = $this->path . '/views/' . $current_view . '-todolist_ejt-admin-display.php';
 
         if (!is_readable($template_path)) {
             return;

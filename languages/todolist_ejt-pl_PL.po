@@ -16,12 +16,12 @@ msgstr ""
 "X-Poedit-KeywordsList: __;_e\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: assets/partials/get_list-todolist_ejt-admin-display.php:4
+#: views/get_list-todolist_ejt-admin-display.php:4
 #: src/Bundle/Framework/Admin/WordpressAdmin.php:34
 msgid "EJT Tasks List"
 msgstr "EJT Lista zadań"
 
-#: assets/partials/get_list-todolist_ejt-admin-display.php:7
+#: views/get_list-todolist_ejt-admin-display.php:7
 msgid ""
 "You may manage all tasks for specific user. Choose user you want to edit. "
 "<strong>Deafult user is You.</strong><br />\n"
@@ -31,41 +31,41 @@ msgstr ""
 "edycji. <strong>Domyślnym użytkownikiem jesteś Ty</strong><br/>\n"
 "Wszystkie akcje są natychmiast zapisywane na serwer."
 
-#: assets/partials/get_list-todolist_ejt-admin-display.php:13
+#: views/get_list-todolist_ejt-admin-display.php:13
 msgid "Use [todoList] to display tasksTable on front."
 msgstr ""
 "Użyj skrótu [todoList] by wyświetlić listę zadań w motywie/poście/stronie."
 
-#: assets/partials/get_list-todolist_ejt-display.php:3
-#: assets/partials/get_list-todolist_ejt-display.php:5
+#: views/get_list-todolist_ejt-display.php:3
+#: views/get_list-todolist_ejt-display.php:5
 msgid "Choose user"
 msgstr "Wybierz uzytkownika"
 
-#: assets/partials/get_list-todolist_ejt-display.php:12
+#: views/get_list-todolist_ejt-display.php:12
 msgid "Type your todo task"
 msgstr "Wpisz nowe zadanie"
 
-#: assets/partials/get_list-todolist_ejt-display.php:28
+#: views/get_list-todolist_ejt-display.php:28
 msgid "Complete all tasks"
 msgstr "Zakończ wszystkie zadania"
 
-#: assets/partials/get_list-todolist_ejt-display.php:30
+#: views/get_list-todolist_ejt-display.php:30
 msgid "Clear completed"
 msgstr "Kasuj ukończone"
 
-#: assets/partials/get_list-todolist_ejt-display.php:48
+#: views/get_list-todolist_ejt-display.php:48
 msgid "left"
 msgstr "zostało"
 
-#: assets/partials/get_list-todolist_ejt-display.php:52
+#: views/get_list-todolist_ejt-display.php:52
 msgid "All"
 msgstr "Wszystkie"
 
-#: assets/partials/get_list-todolist_ejt-display.php:53
+#: views/get_list-todolist_ejt-display.php:53
 msgid "Uncomplete"
 msgstr "Nieukończone"
 
-#: assets/partials/get_list-todolist_ejt-display.php:54
+#: views/get_list-todolist_ejt-display.php:54
 msgid "Completed"
 msgstr "Ukończone"
 

@@ -39,7 +39,7 @@ class Shortcodes implements RegisterInterface
         if(!is_user_logged_in()) return __('The list is available only for logged-in users.', 'todolist_ejt');
         
         ob_start();
-        include $this->path . '/assets/partials/get_list-todolist_ejt-display.php';
+        include $this->path . '/views/get_list-todolist_ejt-display.php';
         $file_content = ob_get_contents();
         ob_end_clean();
 

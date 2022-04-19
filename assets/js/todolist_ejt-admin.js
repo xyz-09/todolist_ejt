@@ -24,24 +24,7 @@ const taskListComponent = {
 		pluralizeLang: ["task", 'tasks'],
 		users: [],
 		currentUser: currentUser,
-		dragged:{},
-		ghostCardStyle: {
-			leaving: false,
-			pos: {
-				x: 0,
-				y: 0
-			},
-			width: 0,
-			cursorDistance: {
-				x: 0,
-				y: 0
-			},
-			percentDistanceMiddle: 0,
-			transform: '',
-			transformOrigin: '',
-			velocity: 0,
-			rotation: 0
-		},
+		dragged: {},
 	}),
 	watch: {
 		tasks: {
@@ -196,21 +179,21 @@ const taskListComponent = {
 		},
 
 		startDrag(id, event) {
-			
+
 			this.draggedElem = event.target;
 			event.target.classList.add('dragging');
 			event.dataTransfer.dropEffect = 'move';
 			event.dataTransfer.effectAllowed = 'move';
 			event.dataTransfer.setData('itemID', id);
-			document.documentElement.style.cursor = 'grabbing';	
-			event.stopPropagation();		
-		},
-		onDragLeave(event){
+			document.documentElement.style.cursor = 'grabbing';
 			event.stopPropagation();
-			event.target.classList.remove('dropHere');
-		
 		},
-		onDrag(event){
+		onDragLeave(event) {
+			event.target.classList.remove('dropHere');
+			event.stopPropagation();
+
+		},
+		onDrag(event) {
 			event.target.classList.add('dropHere');
 			event.stopPropagation();
 		},
@@ -219,9 +202,9 @@ const taskListComponent = {
 			event.target.classList.remove('dropHere');
 			this.draggedElem.classList.remove('dragging');
 			document.documentElement.style.cursor = 'default';
-			
+
 			this.tasks.splice(id, 0, this.tasks.splice(itemID, 1)[0]);
-		
+
 		},
 
 		pluralize(count) {
